@@ -28,7 +28,7 @@ function App() {
   return (
     <div>
       <h1>Dictionary App</h1>
-      <div className="search-container">
+      <div>
         <input
           type="text"
           value={searchTerm}
@@ -36,9 +36,16 @@ function App() {
           placeholder="Search for a word..."
         />
         <button onClick={handleSearch}>Search</button>
-        <h3>Definition:</h3>
       </div>
-      <div className="result">{searchResult && <p>{searchResult}</p>}</div>
+
+      <div>
+        {searchResult && (
+          <div>
+            <h3>Definition:</h3>
+            <p>{searchResult}</p>
+          </div>
+        )}
+      </div>
     </div>
   );
 }
