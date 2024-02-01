@@ -36,7 +36,6 @@ function App() {
           placeholder="Search for a word..."
         />
         <button onClick={handleSearch}>Search</button>
-        <h3>Definition:</h3>
       </div>
 
       <div>
