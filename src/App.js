@@ -37,11 +37,12 @@ function App() {
         />
         <button onClick={handleSearch}>Search</button>
       </div>
+      <h3>Definition:</h3>
 
       <div>
         {searchResult && (
           <div>
-            <h3>Definition:</h3>
+            {/* <h3>Definition:</h3> */}
             <p>{searchResult}</p>
           </div>
         )}
